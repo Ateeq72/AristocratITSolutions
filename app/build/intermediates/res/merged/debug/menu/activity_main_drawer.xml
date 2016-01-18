@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/com_serv"
+            android:title="Commercial Services" />
+        <item
+            android:id="@+id/aca_serv"
+            android:title="Acadamic Services" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact"
+                android:icon="@android:drawable/ic_dialog_dialer"
+                android:title="Contact us" />
+            <item
+                android:id="@+id/about"
+                android:icon="@android:drawable/ic_dialog_alert"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>

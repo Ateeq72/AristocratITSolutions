@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/menu_softwares.xml",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/menu_softwares.xml"
+    },
+    {
+        "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/menu_contact_u.xml",
+        "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/menu_contact_u.xml"
+    },
+    {
+        "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/menu/menu_softwares.xml",
+        "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/menu/menu_softwares.xml"
+    }
+]
