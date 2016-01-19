@@ -15,13 +15,13 @@ import java.util.List;
 /**
  * Created by aristocrat on 11/1/16.
  */
-public class MyAdapter_Detail_List extends RecyclerView.Adapter<MyAdapter_Detail_List.DataViewHolder> {
+public class MyAdapter_Com_Soft_List extends RecyclerView.Adapter<MyAdapter_Com_Soft_List.DataViewHolder> {
 
     private int rowLayout;
-    private List<MyData> service_list;
+    private List<MyData_Service_Lists> service_list;
     private Context mContext;
 
-    public MyAdapter_Detail_List(List<MyData> service_list, int rowLayout, Context mContext)
+    public MyAdapter_Com_Soft_List(List<MyData_Service_Lists> service_list, int rowLayout, Context mContext)
     {
         this.service_list = service_list;
         this.rowLayout = rowLayout;
@@ -29,17 +29,18 @@ public class MyAdapter_Detail_List extends RecyclerView.Adapter<MyAdapter_Detail
     }
 
     @Override
-    public MyAdapter_Detail_List.DataViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyAdapter_Com_Soft_List.DataViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(rowLayout, parent, false);
         return new DataViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(MyAdapter_Detail_List.DataViewHolder holder, final int position) {
-        MyData md = service_list.get(position);
+    public void onBindViewHolder(MyAdapter_Com_Soft_List.DataViewHolder holder, final int position) {
+        MyData_Service_Lists md = service_list.get(position);
         holder.service_name.setText(md.service_name);
+        holder.service_desc.setText(md.service_desc);
         holder.service_image.setImageDrawable(mContext.getDrawable(md.getImageResourceId(mContext)));
-        holder.service_name.setOnClickListener(new View.OnClickListener() {
+        holder.service_desc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (position)
@@ -69,11 +70,13 @@ public class MyAdapter_Detail_List extends RecyclerView.Adapter<MyAdapter_Detail
 
         protected TextView service_name;
         protected ImageView service_image;
+        protected TextView service_desc;
 
         public DataViewHolder(View itemView) {
             super(itemView);
-            service_name = (TextView) itemView.findViewById(R.id.text_soft_serv_list);
-            service_image = (ImageView) itemView.findViewById(R.id.image_soft_serv_list);
+            service_name = (TextView) itemView.findViewById(R.id.text_serv_title);
+            service_desc = (TextView) itemView.findViewById(R.id.text_serv_desc);
+            service_image = (ImageView) itemView.findViewById(R.id.image_serv_list);
         }
     }
 }

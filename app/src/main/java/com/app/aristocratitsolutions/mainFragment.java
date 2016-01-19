@@ -2,31 +2,18 @@ package com.app.aristocratitsolutions;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;
-import jp.wasabeef.recyclerview.animators.FadeInAnimator;
-import jp.wasabeef.recyclerview.animators.FadeInUpAnimator;
 import jp.wasabeef.recyclerview.animators.LandingAnimator;
-import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator;
-import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 
 /**
@@ -45,7 +32,7 @@ public class mainFragment extends Fragment {
     int pos;
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
-    private MyAdapter myAdapter;
+    private MyAdapter_Commercial_Service myAdapterCommercialService;
     ImageView imageView;
     View.OnClickListener MyOnclickListener;
 
@@ -144,8 +131,8 @@ public class mainFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-        myAdapter = new MyAdapter(ServiceListManager.getInstance().getServices(),R.layout.cardview_common,getContext());
-        recyclerView.setAdapter(new ScaleInAnimationAdapter(myAdapter));
+        myAdapterCommercialService = new MyAdapter_Commercial_Service(CommercialServiceListManager.getInstance().getServices(),R.layout.cardview_common,getContext());
+        recyclerView.setAdapter(new ScaleInAnimationAdapter(myAdapterCommercialService));
 
     }
 

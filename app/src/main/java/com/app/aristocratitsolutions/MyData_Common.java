@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 /**
  * Created by aristocrat on 11/1/16.
  */
-public class MyData {
+public class MyData_Common {
 
     protected String service_name;
     protected String service_image;

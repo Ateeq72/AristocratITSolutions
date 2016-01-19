@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class SoftwareServListManager {
 
-    private static String[] servicesArray = {"Software Development",
+    private static String[] servicesTitle = {"Software Development",
             "Customize Software Development",
             "ERP Solutions",
             "CRM Software",
@@ -24,8 +24,25 @@ public class SoftwareServListManager {
             "Pay Per Click (PPC)",
             "Social Media"};
 
+    private static String[] servicesDesc = {"Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!",
+            "Awesome Service! \n and this is a place holder!"};
+
+
     private static SoftwareServListManager mInstance;
-    private List<MyData> Services;
+    private List<MyData_Service_Lists> Services;
 
     public static SoftwareServListManager getInstance() {
         if (mInstance == null) {
@@ -35,19 +52,22 @@ public class SoftwareServListManager {
         return mInstance;
     }
 
-    public List<MyData> getServices()
+    public List<MyData_Service_Lists> getServices()
     {
         if(Services == null)
         {
-            Services = new ArrayList<MyData>();
-            for (String service_names : servicesArray)
+            Services = new ArrayList<MyData_Service_Lists>();
+
+            for(int i= 0 ; i <15 ; i++)
             {
-                MyData md = new MyData();
-                md.service_name = service_names;
+                MyData_Service_Lists md = new MyData_Service_Lists();
+                md.service_name = servicesTitle[i];
+                md.service_desc = servicesDesc[i];
                 md.service_image = "common";
 
                 Services.add(md);
             }
+
         }
         return Services;
     }

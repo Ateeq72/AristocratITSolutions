@@ -1,5 +1,7 @@
 package com.app.aristocratitsolutions;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,8 +31,16 @@ public class softwaresActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Launching Gmail", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+                sendIntent.setType("plain/text");
+                sendIntent.setData(Uri.parse("aristocratresearch@gmail.com"));
+                sendIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                sendIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { "aristocratresearch@gmail.com" });
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Contact Us via App");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Dear Sir, \n <enter your queries here!>");
+                startActivity(sendIntent);
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -42,7 +52,7 @@ public class softwaresActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        myAdapter = new MyAdapter_Detail_List(SoftwareServListManager.getInstance().getServices(),R.layout.cardview_list_details,this);
+        myAdapter = new MyAdapter_Com_Soft_List(SoftwareServListManager.getInstance().getServices(),R.layout.cardview_list_details,this);
         recyclerView.setAdapter(new SlideInLeftAnimationAdapter(myAdapter));
 
     }

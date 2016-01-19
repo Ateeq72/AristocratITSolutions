@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/com_logo.png",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/com_logo.png"
+    },
+    {
         "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/businesswriting.jpg",
         "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/businesswriting.jpg"
     },
@@ -24,6 +28,10 @@
         "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/common.jpg"
     },
     {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/softwaresolutions.png",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/softwaresolutions.png"
+    },
+    {
         "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/interiorandarchitectdesign.jpg",
         "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/interiorandarchitectdesign.jpg"
     },
@@ -46,6 +54,10 @@
     {
         "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/softwaresolutions.png",
         "source": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/softwaresolutions.png"
+    },
+    {
+        "merged": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/common.jpg",
+        "source": "/home/aristocrat/AndroidStudioProjects/AristocratITSolutions/app/src/main/res/drawable-nodpi/common.jpg"
     },
     {
         "merged": "/home/ateeq-ahmed/AndroidStudioProjects/AristocratITSolutions/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/graphicsdesign.jpg",

@@ -1,11 +1,8 @@
 package com.app.aristocratitsolutions;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +15,14 @@ import java.util.List;
 /**
  * Created by aristocrat on 11/1/16.
  */
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.DataViewHolder> {
+public class MyAdapter_Commercial_Service extends RecyclerView.Adapter<MyAdapter_Commercial_Service.DataViewHolder> {
 
     private int rowLayout;
-    private List<MyData> service_list;
+    private List<MyData_Common> service_list;
     private Context mContext;
     public int pos;
 
-    public MyAdapter(List<MyData> service_list, int rowLayout, Context mContext)
+    public MyAdapter_Commercial_Service(List<MyData_Common> service_list, int rowLayout, Context mContext)
     {
         this.service_list = service_list;
         this.rowLayout = rowLayout;
@@ -33,14 +30,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.DataViewHolder> {
     }
 
     @Override
-    public MyAdapter.DataViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyAdapter_Commercial_Service.DataViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(rowLayout, parent, false);
         return new DataViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(MyAdapter.DataViewHolder holder, final int position) {
-        MyData md = service_list.get(position);
+    public void onBindViewHolder(MyAdapter_Commercial_Service.DataViewHolder holder, final int position) {
+        MyData_Common md = service_list.get(position);
         holder.service_name.setText(md.service_name);
         holder.service_image.setImageDrawable(mContext.getDrawable(md.getImageResourceId(mContext)));
         holder.service_name.setOnClickListener(new View.OnClickListener() {
