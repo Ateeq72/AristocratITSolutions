@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;
+import jp.wasabeef.recyclerview.adapters.SlideInBottomAnimationAdapter;
+import jp.wasabeef.recyclerview.adapters.SlideInLeftAnimationAdapter;
+import jp.wasabeef.recyclerview.animators.FadeInDownAnimator;
 import jp.wasabeef.recyclerview.animators.LandingAnimator;
 
 
@@ -131,12 +134,8 @@ public class mainFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-        myAdapterCommercialService = new MyAdapter_Commercial_Service(CommercialServiceListManager.getInstance().getServices(),R.layout.cardview_common,getContext());
-        recyclerView.setAdapter(new ScaleInAnimationAdapter(myAdapterCommercialService));
+        myAdapterCommercialService = new MyAdapter_Commercial_Service(CommercialServiceListManager.getInstance().getServices(),R.layout.cardview_common,getActivity());
+        recyclerView.setAdapter(new SlideInLeftAnimationAdapter(myAdapterCommercialService));
 
     }
-
-
-
-
 }

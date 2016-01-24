@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import jp.wasabeef.recyclerview.adapters.SlideInBottomAnimationAdapter;
 import jp.wasabeef.recyclerview.adapters.SlideInLeftAnimationAdapter;
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
@@ -33,14 +34,13 @@ public class softwaresActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Launching Gmail", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-                sendIntent.setType("plain/text");
-                sendIntent.setData(Uri.parse("aristocratresearch@gmail.com"));
-                sendIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
-                sendIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { "aristocratresearch@gmail.com" });
-                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Contact Us via App");
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "Dear Sir, \n <enter your queries here!>");
-                startActivity(sendIntent);
+
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","aristocratresearch@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Contact US via App");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Dear Sir, \n <enter your queries here!>");
+                startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
